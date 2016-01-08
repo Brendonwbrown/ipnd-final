@@ -1,0 +1,6 @@
+indexes:
+- kind: Commentary
+  ancestor: yes
+  properties:
+  - name: date
+    direction: desc

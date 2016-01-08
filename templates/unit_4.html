@@ -1,0 +1,214 @@
+{% extends "main.html" %}
+
+{% block content %}
+	<section>
+		<h2>Introduction to Networks</h2>
+		<ul>
+			<li>
+				<ul class="secondary_list">
+					<li><h3>Networks</h3></li>
+					<li>A network is a group of entities that can communicate, even though they are no all directly connected.</li>
+					<li>The internet is a special kind of network.</li>
+					<li>The message has to be encoded in a way that all nodes understand</li>
+					<li>Routing instructions - send messages between specific points requires instructions to notes passing the message on.</li>
+					<li>Priority and permissions on the network.</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="secondary_list">
+					<li><h3>Measuring Networks</h3></li>
+					<li>Latency is the time it takes to send a message from source to destination.</li>
+					<li>Bandwith is the amount of information which can be transmitted per unit of time.</li>
+					<li>Bandwidth / time is measured for the internet in bits/second.</li>
+					<li>1 bit is the answer to 1 yes/no question, or 0/1.</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="secondary_list">
+					<li><h3>Protocols</h3></li>
+					<li>A protocol is the set of rules used by a client to communicate with a server.</li>
+					<li>Web protocol is Hypert Text Transfer Protocol</li>
+					<li>Browser submits a web request to server, server sends the answer.</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="secondary_list">
+					<li><h3>HTML Document Structure</h3></li>
+					<li>Include a simple doctype</li>
+					<li>The head includes a TITLE, some META items and LINK items to style and script.</li>
+					<li>Most everything else goes in the BODY section.</li>
+					<li>URLs are composed of the PROTOCOL, HOSTNAME and PATH.</li>
+					<li>A URL can also contain some QUERY information, which includes a question mark and NAME=PARAMETER. Multiple queries are strung together with & .</li>
+					<li>A FRAGMENT is used to reference a part of the page. Not sent to the server - last in the URL preceded by #</li>
+					<li>A PORT goes right after the HOSTNAME. It's necessary to make the connection to the host - by default, HTML goes over 80.</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="secondary_list">
+					<li><h3>HTTP request and response lines.</h3></li>
+					<li>The HTTP protocol is the protocol used to talk with a web server.</li>
+					<li>A request line contains a METHOD, then PATH, then HTTP VERSION</li>
+					<li>METHOD can use GET or POST, VERSION can be 1.0 or 1.1</li>
+					<li>A request line is followed by HEADERS. NAME:VALUE. "Host:www.example.com, User-Agent:Chrome</li>
+					<li>Requesting info from the server is only part of the equation, the server also responds in its own way</li>
+					<li>The response comes in a STATUS LINE containing an HTTP VERSION, STATUS CODE and REASON PHRASE. 
+					<li>Status codes can begin with 2 through 5.</li>
+					<li>200 means status is OK, 302 when the resource is found, 404 when a resource is not found, and 500 when there's a server error.</li>
+					<li>HEADERS also are returned: date, server software, content type and content length. Sending back server software is not a great idea, and not all returned headers are relevant.</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="secondary_list">
+					<li><h3>Web applications Intro</h3></li>
+					<li>A client can request static or dynamic content.</li>
+					<li>There's static html pages built composed of text, images and documents.</li>
+					<li>There are other pages built on the fly and compiled into browser-readable information with server-side software.</li>
+				</ul>
+			</li>
+			<li>
+		</ul>
+	</section>
+	<section>
+		<h2>Introduction to Forms</h2>
+		<ul>
+			<li>
+				<ul class="secondary_list">
+					<li><h3>What are Forms?</h3></li>
+					<li>Use the FORM tag to introduct a form.</li>
+					<li>The INPUT tag takes some form of user content. Add a NAME attribute.</li>
+					<li>INPUT tags take a TYPE attribute which drastically assists building a form.</li>
+					<li>TEXT, CHECKBOX, SUBMIT, RADIO...</li>
+					<li>Add a LABEL element around the INPUT or use the FOR parameter to assign it.</li>
+					<li>A SELECT tag containing OPTION tags creates a dropdown list.</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Some Additional Tools</h2>
+		<ul>
+			<li>
+				<ul class="secondary_list">
+					<li><h3>Modulo</h3></li>
+					<li>Modulo (%) gives the remainder. Divide something by something. If there's leftover...</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="secondary_list">
+					<li><h3>Dictionary</h3></li>
+					<li>There are strings "..."</li>
+					<li>There are lists = ['brendon', 'wayne','brown']</li>
+					<li>There are dictionaries = &#123'first':'brendon','middle':'wayne','last':'brown'</li>
+					<li>Dictionaries will return the value when the key is invoke like so: d[k]</li>
+					<li>Or 'print KEY in DICTIONARY'</li>
+					<li>Update a dictionary with DICTIONARY['KEY']=VALUE</li>
+					<li>A Dictionary can contain a whole dictionary! Return contents with multiple square brackets and keys: DICTIONARY[KEY][KEY]</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Validation</h2>
+		<ul>
+			<li>
+				<ul class="secondary_list">
+					<li><h3>What is validation?</h3></li>
+					<li>Not everyone who interacts with our website will be good intentioned - allowing input means making our site vulnerable.</li>
+					<li>We also need to ensure well-intention users enter relevant content. People make mistakes. We can help them enter numbers in the number fields and emails in the email fields.</li>
+					<li>HTML has some validation built in. Otherwise we can use Python to validate input content on the server side.</li>
+					<li>A user sends a GET request. The server returns form data. User POSTs the form information. Server validates POST on the way in and either approves or returns form data and an error.</li>
+					<li>Verify input, detect errors, render old form with additional error message.</li> 
+					<li>Don't forget to "escape" some of the characters that could mess up your HTML.</li>
+					<li>Redirect user to a new page when they are successful.</li>
+					<li>Not validating input could allow someone to inject their own code to steal authentication information, or at best, code to mess up site visual appearance.</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Templates</h2>
+		<ul>
+			<li>
+				<ul class="secondary_list">
+					<li><h3>HTML Templating</h3></li>
+					<li>One of the main principles of programming is DRY. Don't Repeat Yourself. Projects overall end up overwhelmingly complex; by breaking up projects into chunks, assigning repeated strings, integers or functions to meaningful variables, we end up instroducing some manageability to our projects, and can spend less time managing and more time solving problems.  </li> 
+					<li>Templating systems and libraries satisfy this principle by allowing us to divide our projects into smaller components while using variable substitution to create dynamic, complicated strings in HTML.</li>
+					<li>Using templates allows for building complex applications, like blocks added to scaffolding.</li>
+					<li>This also allows us to reuse chunks of HTML on several different pages. This also means that if we need to make a change reflected on all the pages, we only need to make it once. For instance, when the header and footer are the same on many pages, if we are using templates, we only have to build them once and updated them once to have changes reflected on all pages.</li>
+					<li>Templating allows for easier debugging and updating. If there's a bug on an element, imagine having to fix it once, and then copy>paste it to each relevant page. What a time sink!</li>
+					<li>Without templates, our code is ugly and jumbled, hard to search, and multiple languages get mixed and confusing. We also lose out on sytax hilighting.</li>
+					<li>Without templates, errors happen way too easily and are harder to debug.</li>
+					<li>JINJA!</li>
+					<li>Use variable substitution with &#123&#123 curly braces &#125&#125</li>
+					<li>Emply statements with &#123% Statement %&#125 &#123% End Statement %&#125</li>
+					<li>For loops: &#123% for statement %&#125 &#123% end statement %&#125</li>
+					<li>Templating plugins should include auto escaping stuff.</li>
+					<li>Minimize the amount of code you put into templates.</li>
+					<li>Minimize html in code.</li>
+					<li></li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Databases</h2>
+		<ul>
+			<li>
+				<ul class="secondary_list">
+					<h3>What is a database.</h3>
+					<li>A program that stores and retrieves large amounts of data.</li>
+					<li>A database can also refer to a machine or system of machines hosting this data.</li>
+					<li>The browser asks the server for infomation, so the server calls it up from a database.</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="secondary_list">
+					<h3>Tables</h3>
+					<li>A database is composed of tables.</li>
+					<li>Tables are composed of columns and rows.</li>
+					<li>Columns have types: integer, date, string (varchar)...</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="secondary_list">
+					<h3>Why Databases?</h3>
+					<li>Querying data by hand is tedious, slow and processor intensive.</li>
+					<li>SQL databases are relational: Postgresql, Mysql, Sqlite, Oracle...</li>
+					<li>Google AppEngine Datastore</li>
+					<li>Amazon Dynamo</li>
+					<li>NoSQL, MongoDB, Couch...</li>
+					<li>There are plenty of options - choose the one that fits the situation best.</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="secondary_list">
+					<h3>SQL</h3>
+					<li>Structured Query Language</li>
+					<li>Invented in the 1970s</li>
+					<li>SELECT * FROM links WHERE id = 5</li>
+					<li>Indexes significantly speed up read times. Hashtables can be used for indexes, each entry is about the same time to lookup,but they lose sorting info. Trees are sorted, but lookups are slower and they vary in time.</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="secondary_list">
+					<h3>ACIC</h3>
+					<li>Atomicity - All parts of a transaction succeed or fail together. Don't allow adding a row without ALL columns filled.</li>
+					<li>Consistency - consistent databasing - update the score, update the user's karma.</li>
+					<li>Isolation - no transaction can interfere with another's. An upvote and downvote cannot done via the same transaction.</li>
+					<li>Durability - Once the transaction is committed it will not be lost. Backups...</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="secondary_list">
+					<h3>Google App Engine Database</h3>
+					<li>Tables are called entities.</li>
+					<li>Columns are not fixed.</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	{% block comments_form %}
+	{% endblock %}
+
+{% endblock %}

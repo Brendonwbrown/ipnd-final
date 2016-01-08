@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+header {
+	background: #424242;
+	border-bottom: 10px solid #FFD900;
+	color: #efefef;
+	padding: 20px 20px;
+}
+
+footer {
+	background: #FFD900;
+	border-top: 10px solid #00CCD6;;
+	color: #424242;
+	padding: 20px 20px;
+}
+
+.title {
+	padding: 0 20px;
+}
+
+.title h3 {
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+.title h4 {
+	margin-top: .25em; 
+}
+
+a {
+	color: #47CBD7;
+}
+
+h2  {
+	font-size: 40px;
+	color: #424242;
+}
+
+section {
+	padding-top: 20px;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+.primary_list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.secondary_list {
+	padding: 10px 20px 30px 20px;
+	background: #EFEFEF;
+	border-left: 6px solid #00CCD6;
+}
+
+.secondary_list li {
+	margin-left: 20px;
+	list-style: disc;
+}
+
+.secondary_list > li:first-child {
+	margin-left: 0;
+	list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 1.2rem;
+	}
+	.comments_form, .comments, footer  {
+		padding: 1em;
+	}
+	input[type="text"] {
+		height: 2em;
+	}
+	input[type="submit"] {
+		height: 48px;
+	}
+}

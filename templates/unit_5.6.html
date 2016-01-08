@@ -1,0 +1,61 @@
+{% extends "main.html" %}
+
+{% block content %}
+	<section>
+		<div class="title">
+			<h3>Choose Your Next Steps</h3>
+			<h4>These are notes that I gathered from extended learning based on Course 5.</h4>
+		</div>
+		<ul>
+			<li>
+				<div class="secondary_list">
+					<h3>Responsive Web Design - Udacity course</h3>
+					<p>RWD is the important art of building websites which are optimized to present in a friendly way to users on any device. This is an extremely important skill for a front-end developer: studies have shown that users presented with content not optimized for their device, especially mobile, are simply lost. Start by having good testing tools - those included built into browsers (developer tools), along with emulators and simulators, will give a good impression of what sites in progress will look like on different devices.</p>
+					<p>The viewport - describing the area of the screen the browser can render content to. Pixel density ratios mess this up - how many pixels are there on the screen? It depends on the hardware. The browser will report the width, not in hardware pixels, but in calculated Device Independent Pixels. We use the meta viewport tag with widths and a scale of 1 to give indication to the browser for the device. Use relative positioning and units to set you elements on your page. Max-widths, percentages, em or rem.</p>
+					<p>Users tap things now. Lots of users tap things, so make your tap targets big enough, 48px wide by tall. Space them apart so people don't hit more than one.</p>
+					<p>Start designing at phone size, so we make sure that the most important content makes it to the user.</p>
+				</div>
+			</li>
+			<li>
+				<div class="secondary_list">
+					<h3>Basic Principles of Responsive Web Design</h3>
+					<p><a href="http://blog.froont.com/9-basic-principles-of-responsive-web-design/">From Froont Open Design Blog</a></p>
+					<p>RWD is a strategy to solve the problem of a multi-screen user base. There is no predictable screen size anymore. There should not be any fixed page widths, no mm, in or px.</p>
+					<ul>
+						<li>Responsive is not adaptive - they are similar and complementary, but while responsive focuses on viewports and media queries, adaptive takes into account device capabilites and hardware performance.</li>
+						<li>The Flow - on smaller screens, content tends to take up more vertical space and gets pushed away. Plan for it.</li>
+						<li>Relative units - there are no static units anymore - use percentages, rem or em to establish content on the page so that it's flexible and relational to the size of the browser.</li>
+						<li>Breakpoints - allow the layout of the content to adjust according to the browser size. Otherwise, content just shrinks until it's illegible.</li>
+						<li>Max and min - use max and min widths to create limits for your relative units.</li>
+						<li>Nest - content that need  not change should be grouped in a div.</li>
+						<li>Mobile first (or desktop) - adding mobile constraints from the get-go helps a designer make crucial decisions within these limitations, and then add features as we build up.</li>
+						<li>Webfonts - use them, but sparingly. They are beautiful, but your users will have to download them. System fonts can be a bit unpredictable except in that they are fast!</li>
+						<li>Use vector images - unless the picture is a photo, make a vector SVG or icon font. Optimize the bitmaps.</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="secondary_list">
+					<h3>The Principles of Adaptive Design</h3>
+					<p><a href="http://bradfrost.com/blog/post/the-principles-of-adaptive-design/">From Bradfrost.com Blog</a></p>
+					<p>As the RWD conversation continues we need to realize that there is more than just fluid grids, flexible media, media queries. Here are 5 principles to help guide the creation of adaptive designs.</p>
+					<ul>
+						<li>Ubiquity - As much as the Web is ubiquitous, so must be the tools we make to present its content. There is no mobile context - serve all devices equal content where possible, using optimization and an inclusive disposition.</li>
+						<li>Flexibility - no more fixed widths. Layouts should be device-agnostic, working beautifully anwhere, any resolution. Let content determine breakpoints instead of arbitrary ones based on device market shares.</li>
+						<li>Performance - when we ditched "mobile layouts" for media queries, webpage load grew, so we need to remember that being adaptive to each device also means taking into account limited bandwidths. Use performance budgets and conditional loading, test, test, test.</li>
+						<li>Enhancement - go beyond squishy layouts. Use feature detection.</li>
+						<li>Future-friendly - acknowledge unpredictablility and build to have content ready to go anywhere.</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</section>
+		
+</body>
+</html>
+	{% block comments_form %}
+	{% endblock %}
+
+{% endblock %}
+
+
